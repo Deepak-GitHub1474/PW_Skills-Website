@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon1.jpg" type="image/x-icon">
+    <title>PW Skills</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="p-5 mb-10" style="box-shadow:0 0 10px #e7e6e6;">
+        <div>
+            <div class="flex items-center justify-between">
+                <img src="./assets/pw-logo.png" alt="pw-logo" class="w-36">
+
+                <!-- Responsive Layout for Search -->
+                <div class="lg:flex items-center justify-center" id="search-container">
+                    <div class="lg:flex items-center justify-center hidden" id="search-icon-container">
+                        <i class="fa-solid fa-magnifying-glass fa-lg relative left-10 cursor-pointer"
+                            id="search-box-icon"></i>
+                    </div>
+                    <input type="text" placeholder="Search by product title"
+                        class="lg:w-[42rem] xl:w-[56rem] border-2 border-[#f1f1f1] rounded p-2 pl-14 outline-none lg:block  hidden"
+                        id="search-box">
+                </div>
+
+                <!-- Responsive Layout for Profile Image -->
+                <div
+                    class="w-12 h-12 rounded-full hover:border-2 hover:border-[#E97862] lg:flex items-center justify-between hidden overflow-hidden cursor-pointer">
+                    <img src="./assets/deepak.png" alt="profile-img" class=" rounded-full object-contain">
+                </div>
+
+                <!-- Hamburger Icon for Small Screens -->
+                <div class="lg:hidden">
+                    <!-- Add your Search icon here -->
+                    <i class="fa-solid fa-magnifying-glass fa-lg mr-4 cursor-pointer" id="search-icon"></i>
+                    <!-- Add your hamburger icon here -->
+                    <i class="fa-solid fa-bars fa-lg cursor-pointer" id="hamberger"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigator Section -->
+        <nav class="lg:block hidden mt-7">
+            <ul class="flex items-center justify-evenly">
+                <div
+                    class="flex items-center justify-center gap-2 bg-[#f1f1f1] pt-2 pb-2 pl-4 pr-4 rounded cursor-pointer">
+                    <li>Course</li>
+                    <i class="fa-solid fa-angle-down pt-1.5"></i>
+                </div>
+                <li>PW Skills Lab</li>
+                <li>Job Portal</li>
+                <li>Experience Portal</li>
+                <li>Become an affiliate</li>
+                <li>Hall Of fame</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section 1 -->
+    <section class="flex justify-evenly items-center gap-10 ml-28 mr-28">
+        <div>
+            <h1 class="text-4xl font-bold">Upscaling Made
+                <span class="text-[#e86969]">&lt;</span>
+                <span class="auto-type text-[#e86969]"></span>
+                <span class="text-[#e86969]">&gt;</span>
+            </h1>
+            <h1 class="text-4xl font-bold mt-4">With PW Skills</h1>
+            <p class="text-[#000] font-thin text-lg max-w-[90%] mt-8 mb-8">
+                PW Skills is your one-stop-shop for upscaling. Get maximum value for time
+                and resources you invest, with job-ready courses & high-technology,
+                available at the lowest cost.
+            </p>
+            <button class="text-white bg-[#e86969] p-2 w-48 rounded text-lg">Explore Courses</button>
+        </div>
+        <div class="relative w-full">
+            <img src="./assets/hero-shadow.png" alt="cover-shadow-img" class="w-[82%] absolute top-14">
+            <img src="./assets/hero-bg.png" alt="cover-img" class="w-[82%] relative z-111 left-20">
+        </div>
+        <!-- <figure class="w-full regular:!w-[65%] large:!w-[42%] relative z-50 mx-auto">
+            <img src="./assets/hero-shadow.png"alt="hero" class="!w-full aspect-square">
+            <img src="./assets/hero-bg.png" alt="shadow" class="absolute top-28 z-10 right-10 ">
+        </figure> -->
+    </section>
+
+    <!-- Hero Section-2 -->
+
+    <section class="flex items-center justify-evenly flex-wrap gap-5 mt-16 mb-24 ml-4 mr-4">
+        <div class="flex items-center justify-center gap-5 drop-shadow-md p-5 w-64"
+            style="box-shadow: 0 0 5px #e7e6e6;">
+            <img src="./assets/statistics1.png" alt="statistics1">
+            <div>
+                <h1 class="font-medium text-xl"><b>55%</b></h1>
+                <p>Average Salary Hike</p>
+            </div>
+
+        </div>
+        <div class="flex items-center justify-center gap-5 drop-shadow-md p-5 w-64"
+            style="box-shadow: 0 0 5px #e7e6e6;">
+            <img src="./assets/statistics2.png" alt="statistics1">
+            <div>
+                <h1 class="font-medium text-xl"><b>600+</b></h1>
+                <p>Different Courses</p>
+            </div>
+        </div>
+        <div class="flex items-center justify-center gap-5 drop-shadow-md p-5 w-64"
+            style="box-shadow: 0 0 5px #e7e6e6;">
+            <img src="./assets/statistics3.png" alt="statistics1">
+            <div>
+                <h1 class="font-medium text-xl"><b>12000+</b></h1>
+                <p>Career Transitions</p>
+            </div>
+
+        </div>
+        <div class="flex items-center justify-center gap-5 drop-shadow-md p-5 w-64"
+            style="box-shadow: 0 0 5px #e7e6e6;">
+            <img src="./assets/statistics4.png" alt="statistics1">
+            <div>
+                <h1 class="font-medium text-xl"><b>400+</b></h1>
+                <p>Hiring Partners</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section class="mb-20 ml-28 mr-28">
+        <div class="flex items-center justify-between">
+            <h1 class="text-3xl font-bold">Our Courses</h1>
+            <div class="p-1 w-32 text-center cursor-pointer" style="box-shadow: 0 0 10px #e7e6e6;">
+                <p>View All <span class="text-2xl">&#8594;</span></p>
+            </div>
+        </div>
+        <div class="mt-5">
+            <spanc class="cursor-pointer">Trending</span>
+                <span class="ml-16 mr-16 cursor-pointer">Live</span>
+                <span class="cursor-pointer">Community</span>
+        </div>
+        <hr class="mt-4 border-1 border-[#a5a5a5]">
+
+        <!-- Course Cards -->
+        <div class="flex flex-wrap items-center justify-center gap-8 mt-6 ml-4">
+
+            <div class="relative w-[385px] rounded-2xl overflow-hidden" style="box-shadow: 0 0 10px #e7e6e6;">
+                <img src="./assets/java.png" alt="java-mentor-cover" class="w-[100%] ">
+                <div
+                    class="w-11 h-11 flex items-center justify-center rounded-full bg-[#fcf1f9] text-[#e86969] absolute top-20 right-44 cursor-pointer">
+                    <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
+                <div
+                    class="flex items-center justify-center gap-1 w-[70px] h-7 bg-[#fcf1f9] rounded absolute top-[182px] right-5">
+                    <div class="w-2 h-2 bg-[#e86969] rounded-full"></div>
+                    <p class="text-sm">English</p>
+                </div>
+                <div class="flex items-center justify-around">
+                    <h2 class="text-xl font-bold mt-4 w-[260px] opacity-90">Building MicroServices in Java for Cloude
+                    </h2>
+                    <div class="w-6 h-6 rounded-full bg-[#fcf1f9] flex items-center justify-center"
+                        style="box-shadow: 0 0 10px #e7e6e6;">
+                        <i class="fa-solid fa-share cursor-pointer" style="color: #e86969;"></i>
+                    </div>
+                </div>
+                <div class="leading-10">
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-user-tie" style="color: #808080;"></i>
+                        <p class="">Priya Bhatia <span class="text-gray-500 cursor-pointer">and 2 more</span></p>
+                    </div>
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-calendar" style="color: #808080;"></i>
+                        <p class="">Start on 16 Sept 2023</p>
+                    </div>
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-book" style="color: #808080;"></i>
+                        <p class="">Job Assurance | Career guidance <span class="text-gray-500 cursor-pointer">&
+                                More</span></p>
+                    </div>
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-user-graduate" style="color: #808080;"></i>
+                        <p class="">College Student & Working Professional</p>
+                    </div>
+                </div>
+
+                <!-- Enroll Section -->
+                <div class="flex justify-center">
+                    <hr class="mt-4 mb-8 border-1 border-[#ebeaea] w-[85%]">
+                </div>
+
+                <div class="flex items-center justify-evenly">
+                    <div class="flex items-center gap-1">
+                        <h2 class="text-xl font-bold opacity-90">₹ 150000.00</h2>
+                        <p class="line-through text-gray-500">40000.00</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div class="w-5 h-5 bg-green-600 flex items-center justify-center rounded-full text-white">%
+                        </div>
+                        <p class="text-green-600 font-semibold">62.5% Discount</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex items-center justify-between mt-8">
+                    <button class="bg-[#f0eeee] text-[#e86969] w-48 h-12 font-semibold">Explore</button>
+                    <button class="bg-[#e86969] text-[#ffffff] w-48 h-12 font-semibold">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="relative w-[385px] rounded-2xl overflow-hidden" style="box-shadow: 0 0 10px #e7e6e6;">
+                <img src="./assets/data-analytics.png" alt="data-analytics-mentor-cover" class="w-[100%]">
+                <div
+                    class="w-11 h-11 flex items-center justify-center rounded-full bg-[#fcf1f9] text-[#e86969] absolute top-20 right-44 cursor-pointer">
+                    <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
+                <div
+                    class="flex items-center justify-center gap-1 w-[70px] h-7 bg-[#fcf1f9] rounded absolute top-[182px] right-5">
+                    <div class="w-2 h-2 bg-[#e86969] rounded-full"></div>
+                    <p class="text-sm">English</p>
+                </div>
+                <div class="leading-10">
+                    <div class="flex items-center justify-around">
+                        <h2 class="text-xl font-bold mt-4 w-[260px] opacity-90">Masterring Full Stack Data Analytics
+                        </h2>
+                        <div class="w-6 h-6 rounded-full bg-[#fcf1f9] flex items-center justify-center"
+                            style="box-shadow: 0 0 10px #e7e6e6;">
+                            <i class="fa-solid fa-share cursor-pointer" style="color: #e86969;"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-user-tie" style="color: #808080;"></i>
+                        <p>Krish Nayak <span class="text-gray-500 cursor-pointer">and 7 more</span></p>
+                    </div>
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-calendar" style="color: #808080;"></i>
+                        <p>Start on 23 Sept 2023</p>
+                    </div>
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-book" style="color: #808080;"></i>
+                        <p>Job Assurance | 200+ Live Classes <span class="text-gray-500 cursor-pointer">& More</span>
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-user-graduate" style="color: #808080;"></i>
+                        <p>College Student & Working Professional</p>
+                    </div>
+                </div>
+
+                <!-- Enroll Section -->
+                <div class="flex justify-center">
+                    <hr class="mt-4 mb-8 border-1 border-[#ebeaea] w-[85%]">
+                </div>
+
+                <div class="flex items-center justify-evenly">
+                    <div class="flex items-center gap-1">
+                        <h2 class="text-xl font-bold opacity-90">₹ 150000.00</h2>
+                        <p class="line-through text-gray-500">40000.00</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div class="w-5 h-5 bg-green-600 flex items-center justify-center rounded-full text-white">%
+                        </div>
+                        <p class="text-green-600 font-semibold">62.5% Discount</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex items-center justify-between mt-8">
+                    <button class="bg-[#f0eeee] text-[#e86969] w-48 h-12 font-semibold">Explore</button>
+                    <button class="bg-[#e86969] text-[#ffffff] w-48 h-12 font-semibold">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="relative w-[385px] rounded-2xl overflow-hidden" style="box-shadow: 0 0 10px #e7e6e6;">
+                <img src="./assets/web-development.png" alt="web-development-mentor-cover" class="w-[100%]">
+                <div
+                    class="w-11 h-11 flex items-center justify-center rounded-full bg-[#fcf1f9] text-[#e86969] absolute top-20 right-44 cursor-pointer">
+                    <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
+                <div
+                    class="flex items-center justify-center gap-1 w-[70px] h-7 bg-[#fcf1f9] rounded absolute top-[182px] right-5">
+                    <div class="w-2 h-2 bg-[#e86969] rounded-full"></div>
+                    <p class="text-sm">English</p>
+                </div>
+                <div class="leading-10">
+                    <div class="flex items-center justify-around">
+                        <h2 class="text-xl font-bold mt-4 w-[260px] opacity-90">Full Stack Web Development</h2>
+                        <div class="w-6 h-6 rounded-full bg-[#fcf1f9] flex items-center justify-center"
+                            style="box-shadow: 0 0 10px #e7e6e6;">
+                            <i class="fa-solid fa-share cursor-pointer" style="color: #e86969;"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-user-tie" style="color: #808080;"></i>
+                        <p class="">Hitesh Choudhary <span class="text-gray-500 cursor-pointer">and 4 more</span></p>
+                    </div>
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-calendar" style="color: #808080;"></i>
+                        <p class="">Start on 26 Aug 2023</p>
+                    </div>
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-book" style="color: #808080;"></i>
+                        <p class="">Job Assurance | Assignment <span class="text-gray-500 cursor-pointer">& More</span>
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 ml-8">
+                        <i class="fa-solid fa-user-graduate" style="color: #808080;"></i>
+                        <p class="">College Student & Working Professional</p>
+                    </div>
+                </div>
+
+                <!-- Enroll Section -->
+                <div class="flex justify-center">
+                    <hr class="mt-4 mb-8 border-1 border-[#ebeaea] w-[85%]">
+                </div>
+
+                <div class="flex items-center justify-evenly">
+                    <div class="flex items-center gap-1">
+                        <h2 class="text-xl font-bold opacity-90">₹ 150000.00</h2>
+                        <p class="line-through text-gray-500">40000.00</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div class="w-5 h-5 bg-green-600 flex items-center justify-center rounded-full text-white">%
+                        </div>
+                        <p class="text-green-600 font-semibold">62.5% Discount</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex items-center justify-between mt-8">
+                    <button class="bg-[#f0eeee] text-[#e86969] w-48 h-12 font-semibold">Explore</button>
+                    <button class="bg-[#e86969] text-[#ffffff] w-48 h-12 font-semibold">Enroll Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex items-center justify-center gap-6 mt-10">
+            <div class="w-11 h-11 flex items-center justify-center rounded-full bg-[#fcf1f9] text-[#e86969] font-bold text-2xl"
+                style="box-shadow: 0 0 10px #e7e6e6;">
+                &lt;</div>
+            <div class="w-11 h-11 flex items-center justify-center rounded-full bg-[#fcf1f9] text-[#e86969] font-bold text-2xl"
+                style="box-shadow: 0 0 10px #e7e6e6;">
+                &gt;</div>
+        </div>
+    </section>
+
+    <!-- FOnt awesome link -->
+    <script src="https://kit.fontawesome.com/5ad84bde35.js" crossorigin="anonymous"></script>
+
+    <!-- Typed Js Link-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- External JavaScript -->
+    <script src="home.js"></script>
+</body>
+
+</html>
