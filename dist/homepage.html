@@ -137,7 +137,7 @@
                 <h1 class="text-3xl font-bold">Our Courses</h1>
                 <div class="p-1 w-32 text-center cursor-pointer mr-[18px] md:block hidden"
                     style="box-shadow: 0 0 10px #e7e6e6;">
-                    <p>View All <span class="text-2xl">&#8594;</span></p>
+                    <p>View All <span class="text-3xl">&#8594;</span></p>
                 </div>
             </div>
 
@@ -390,15 +390,15 @@
 
             </div>
 
-            <!-- Next Prev Button -->
-            <div class="flex items-center justify-center gap-6 mt-10">
+            <!-- Next Previous Button Section -->
+            <!-- <div class="flex items-center justify-center gap-6 mt-10">
                 <div class="w-11 h-11 flex items-center justify-center rounded-full bg-[#fcf1f9] text-[#e86969] font-bold text-2xl cursor-pointer"
                     style="box-shadow: 0 0 10px #cecece;">
                     &lt;</div>
                 <div class="w-11 h-11 flex items-center justify-center rounded-full bg-[#fcf1f9] text-[#e86969] font-bold text-2xl cursor-pointer"
                     style="box-shadow: 0 0 10px #cecece;">
                     &gt;</div>
-            </div>
+            </div> -->
         </section>
 
         <!-- Ecosystem Section -->
@@ -483,44 +483,47 @@
         <!-- Banner Secttion -->
         <section class="text-[#ffffff]">
             <!-- Banner-1 Left Section -->
-            <div class="flex items-center justify-center bg-[#192A36] w-full h-screen overflow-hidden relative">
-                <div class="flex justify-center gap-12 flex-col w-[50%] z-50 2xl:pl-32 lg:p-20 pl-4">
-                    <div>
-                        <h1 class="sm:text-4xl text-2xl font-bold sm:w-[395px] w-[250px]">Guiding You At Every Step!
+            <div
+                class="bg-[#192A36] flex xs:items-center xs:justify-center xs:flex-row flex-col-reverse w-full h-screen xs:overflow-hidden relative">
+                <div
+                    class="flex xs:items-start items-center justify-center xs:gap-12 gap-5 flex-col xs:w-[50%] w-[100%] h-[50vh] z-50 2xl:pl-32 lg:p-20 pl-4 pr-4">
+                    <div class="flex xs:justify-start xs:items-start flex-col justify-center items-center">
+                        <h1 class="xs:text-4xl text-2xl font-bold xs:w-[395px] w-[290px]">Guiding You At Every Step!
                         </h1>
-                        <p class="w-[270px] mt-3 text-[#eaecef]">Our Top Mentors show you the way, to becoming a
+                        <p class="xs:w-[270px] mt-3 text-[#eaecef] xs:text-start text-center">Our Top Mentors show you
+                            the way, to becoming a
                             thorough professional!
                         </p>
                     </div>
 
                     <div
-                        class="flex items-center gap-5 z-50 2xl:w-[380px] xl:w-[380px] lg:w-[650px] md:w-[500px] sm:w-[380px]  w-[260px] flex-wrap">
-                        <img src="./assets/amazon-logo.svg" alt="amazon-logo" class="w-[110px]">
-                        <img src="./assets/google-logo.svg" alt="google-logo" class="w-[110px]">
-                        <img src="./assets/walmart-logo.svg" alt="walmart-logo" class="w-[110px]">
-                        <img src="./assets/microsoft-logo.svg" alt="microsoft-logo" class="w-[110px]">
-                        <img src="./assets/linkedin-logo.svg" alt="linkedin-logo" class="w-[110px]">
+                        class="flex items-center justify-center xs:justify-start sm:gap-5 gap-[10px] 2xl:w-[380px] xl:w-[380px] lg:w-[650px] md:w-[500px] sm:w-[380px] w-[260px] flex-wrap">
+                        <img src="./assets/amazon-logo.svg" alt="amazon-logo" class="xs:w-[110px] w-[80px]">
+                        <img src="./assets/google-logo.svg" alt="google-logo" class="xs:w-[110px] w-[80px]">
+                        <img src="./assets/walmart-logo.svg" alt="walmart-logo" class="xs:w-[110px] w-[80px]">
+                        <img src="./assets/microsoft-logo.svg" alt="microsoft-logo" class="xs:w-[110px] w-[80px]">
+                        <img src="./assets/linkedin-logo.svg" alt="linkedin-logo" class="xs:w-[110px] w-[80px]">
                     </div>
-
 
                     <!-- More & Explore Container -->
                     <div>
-                        <div class="text-[#eaaa2e] mb-8">& more...</div>
-                        <div class="w-32 h-12 bg-[#ffffff] text-[#192a36] flex items-center justify-center rounded-md">
+                        <div class="text-[#eaaa2e] mb-8 xs:text-start text-center">& more...</div>
+                        <div
+                            class="xs:w-32 xs:h-12 w-72 h-10 bg-[#ffffff] text-[#192a36] flex items-center justify-center rounded-md">
                             <button class="text-md font-semibold">Explore</button>
-                            <span class="text-2xl">&#8594;</span>
+                            <span class="xs:text-3xl text-4xl">&#8594;</span>
                         </div>
                     </div>
 
                     <!-- Skip Container -->
-                    <div class="font-semibold flex items-center">
-                        <p>SKIP</p>
-                        <span class="text-2xl">&#8594;</span>
+                    <div class="font-semibold flex items-center xs:block hidden">
+                        <span>SKIP</span>
+                        <span class="text-3xl">&#8594;</span>
                     </div>
-
                 </div>
+
                 <!-- Ring -->
-                <div class="flex justify-center items-center absolute">
+                <div class="flex justify-center items-center absolute z-40">
                     <div
                         class="w-80 h-80 bg-[#2f8dc8] rounded-full xl:flex items-center justify-center hidden xl:block">
                         <div>
@@ -531,22 +534,25 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Banner-1 Right Section -->
-                <div class="flex justify-center items-center w-[50%]">
-                    <img src="./assets/banner-1.png" alt="banner-1-cover" class="max-w-full sm:w-[100%] w-64">
+                <div class="xs:flex xs:justify-center xs:items-center xs:w-[50%] w-[100%] h-[50vh] z-30">
+                    <img src="./assets/banner-1.png" alt="banner-1-cover" class="max-w-full xs:w-[100%] w-[100%]">
                 </div>
             </div>
 
             <!-- Banner-2 Left Section -->
-            <div class="bg-[#3a9067] w-full h-screen flex items-center justify-center overflow-hidden relative">
-                <div class="flex justify-center gap-16 flex-col w-[50%] z-50 2xl:pl-32 lg:p-20 pl-4">
-
-                    <div>
+            <div
+                class="bg-[#3a9067] flex xs:items-center xs:justify-center xs:flex-row flex-col-reverse w-full h-screen xs:overflow-hidden relative">
+                <div
+                    class="flex xs:items-start items-center justify-center xs:gap-16 gap-5 flex-col xs:w-[50%] w-[100%] h-[50vh] z-50 2xl:pl-32 lg:p-20 pl-4 pr-4">
+                    <div class="flex xs:justify-start xs:items-start flex-col justify-center items-center">
                         <h1
-                            class="sm:text-4xl text-2xl font-bold xl:w-[440px] lg:w-[670px] md:w-[570px] sm:w-[370px] w-[320px]">
-                            One Stop Destination For All Placement
-                            Needs</h1>
-                        <p class="w-[270px] mt-3 text-[#eaecef]">Resume Support, Mock Interview,
+                            class="xs:text-4xl text-xl font-bold xl:w-[440px] lg:w-[670px] md:w-[570px] xs:w-[370px] w-[320px] xs:text-start text-center">
+                            One Stop Destination For All Placement Needs
+                        </h1>
+                        <p class="xs:w-[270px] mt-3 text-[#eaecef] xs:text-start text-center">Resume Support, Mock
+                            Interview,
                             Exclusive Job Offers!
                         </p>
                     </div>
@@ -563,25 +569,26 @@
                             <p class="text-[#eaecef]">1500+</p>
                             <p class="text-[#eaecef]">Placements</p>
                         </div>
-
                     </div>
 
                     <!-- Explore Container -->
                     <div>
-                        <div class="w-32 h-12 bg-[#ffffff] text-[#3e8e2a] flex items-center justify-center rounded-md">
+                        <div
+                            class="xs:w-32 xs:h-12 w-72 h-10 bg-[#ffffff] text-[#192a36] flex items-center justify-center rounded-md">
                             <button class="text-md font-semibold">Explore</button>
-                            <span class="text-2xl">&#8594;</span>
+                            <span class="text-3xl">&#8594;</span>
                         </div>
                     </div>
 
                     <!-- Skip Container -->
-                    <div class="font-semibold flex items-center">
-                        <p>SKIP</p>
-                        <span class="text-2xl">&#8594;</span>
+                    <div class="font-semibold flex items-center xs:block hidden">
+                        <span>SKIP</span>
+                        <span class="text-3xl">&#8594;</span>
                     </div>
                 </div>
+
                 <!-- Ring -->
-                <div class="flex justify-center items-center absolute">
+                <div class="flex justify-center items-center absolute z-40">
                     <div
                         class="w-80 h-80 bg-[#79be43] rounded-full xl:flex items-center justify-center hidden xl:block">
                         <div>
@@ -594,19 +601,22 @@
                 </div>
 
                 <!-- Banner-2 Right Section -->
-                <div class="flex justify-center items-center w-[50%]">
-                    <img src="./assets/banner-2.png" alt="banner-1-cover" class="max-w-full sm:w-[100%] w-64">
+                <div class="xs:flex xs:justify-center xs:items-center xs:w-[50%] w-[100%] h-[50vh] z-30">
+                    <img src="./assets/banner-2.png" alt="banner-1-cover" class="max-w-full xs:w-[100%] w-[100%]">
                 </div>
             </div>
 
             <!-- Banner-3 Left Section -->
-            <div class="bg-[#9d4438] w-full h-screen flex items-center justify-center overflow-hidden relative">
-                <div class="flex justify-center gap-14 flex-col w-[50%] z-50 2xl:pl-32 lg:p-20 pl-4">
+            <div
+                class="bg-[#9d4438] flex xs:items-center xs:justify-center xs:flex-row flex-col-reverse w-full h-screen xs:overflow-hidden relative">
+                <div
+                    class="flex xs:items-start items-center justify-center xs:gap-16 gap-16 flex-col xs:w-[50%] w-[100%] h-[50vh] z-50 2xl:pl-32 lg:p-20 pl-4 pr-4">
                     <div>
                         <h1
-                            class="sm:text-4xl text-2xl font-bold xl:w-[440px] lg:w-[670px] md:w-[570px] sm:w-[370px] w-[320px]">
+                            class="xs:text-4xl text-xl font-bold xl:w-[440px] lg:w-[670px] md:w-[570px] xs:w-[370px] w-[320px] xs:text-start text-center">
                             Real-Time Industry Experience</h1>
-                        <p class="sm:w-[420px] md:w-[490px] xl:w-[420px] w-[310px] mt-3 text-[#eaecef]">
+                        <p
+                            class="xs:w-[420px] md:w-[490px] xl:w-[420px] w-[310px] mt-3 text-[#eaecef] xs:text-start text-center">
                             Learn & experience real-time development as per industry standards
                         </p>
                     </div>
@@ -628,21 +638,22 @@
 
                     <!-- Explore Container -->
                     <div>
-                        <div class="w-32 h-12 bg-[#ffffff] text-[#cf6a5d] flex items-center justify-center rounded-md">
+                        <div
+                            class="xs:w-32 xs:h-12 w-72 h-10 bg-[#ffffff] text-[#cf6a5d] flex items-center justify-center rounded-md">
                             <button class="text-md font-semibold">Explore</button>
-                            <span class="text-2xl">&#8594;</span>
+                            <span class="text-3xl">&#8594;</span>
                         </div>
                     </div>
 
                     <!-- Skip Container -->
-                    <div class="font-semibold flex items-center">
-                        <p>SKIP</p>
-                        <span class="text-2xl">&#8594;</span>
+                    <div class="font-semibold flex items-center xs:block hidden">
+                        <span>SKIP</span>
+                        <span class="text-3xl">&#8594;</span>
                     </div>
                 </div>
 
                 <!-- Ring -->
-                <div class="flex justify-center items-center absolute">
+                <div class="flex justify-center items-center absolute z-40">
                     <div
                         class="w-80 h-80 bg-[#cf6a5d] rounded-full xl:flex items-center justify-center hidden xl:block">
                         <div>
@@ -654,22 +665,25 @@
                 </div>
 
                 <!-- Banner-3 Right Section -->
-                <div class="flex justify-center items-center w-[50%]">
-                    <img src="./assets/banner-3.png" alt="banner-1-cover" class="max-w-full sm:w-[100%] w-64">
+                <div class="xs:flex xs:justify-center xs:items-center xs:w-[50%] w-[100%] h-[50vh] z-30">
+                    <img src="./assets/banner-3.png" alt="banner-1-cover" class="max-w-full xs:w-[100%] w-[100%]">
                 </div>
             </div>
 
             <!-- Banner-4 Left Section -->
-            <div class="bg-[#80467d] w-full h-screen flex items-center justify-center overflow-hidden relative">
-                <div class="flex justify-center gap-16 flex-col w-[50%] z-50 2xl:pl-32 lg:p-20 pl-4">
+            <div
+                class="bg-[#80467d] flex xs:items-center xs:justify-center xs:flex-row flex-col-reverse w-full h-screen xs:overflow-hidden relative">
+                <div
+                    class="flex xs:items-start items-center justify-center xs:gap-16 gap-8 flex-col xs:w-[50%] w-[100%] h-[50vh] z-50 2xl:pl-32 lg:p-20 pl-4 pr-4">
 
-                    <div>
+                    <div class="flex xs:justify-start xs:items-start flex-col justify-center items-center">
                         <h1
-                            class="sm:text-4xl text-2xl font-bold xl:w-[440px] lg:w-[670px] md:w-[570px] sm:w-[370px] w-[320px]">
+                            class="xs:text-4xl text-xl font-bold xl:w-[440px] lg:w-[670px] md:w-[570px] xs:w-[370px] w-[320px] xs:text-start text-center">
+
                             Flexible Learning Just For You!</h1>
-                        <p class="sm:w-[420px] md:w-[590px] lg:w-[730px] xl:w-[435px] w-[310px] mt-3 text-[#eaecef]">PW
-                            Skills courses are designed to fit every
-                            individual's needs. Learn through LIVE & self-paced courses!
+                        <p
+                            class="xs:w-[420px] md:w-[590px] lg:w-[730px] xl:w-[435px] w-[310px] mt-3 text-[#eaecef] xs:text-start text-center">
+                            PW Skills courses are designed to fit every individual's needs. Learn through LIVE & self-paced courses!
                         </p>
                     </div>
 
@@ -687,23 +701,24 @@
                         </div>
                     </div>
 
-                    <!-- Explore Container -->
+                    <!-- Explore Container 80467d-->
                     <div>
-                        <div class="w-32 h-12 bg-[#ffffff] text-[#80467d] flex items-center justify-center rounded-md">
+                        <div
+                            class="xs:w-32 xs:h-12 w-72 h-10 bg-[#ffffff] text-[#80467d] flex items-center justify-center rounded-md">
                             <button class="text-md font-semibold">Explore</button>
-                            <span class="text-2xl">&#8594;</span>
+                            <span class="text-3xl">&#8594;</span>
                         </div>
                     </div>
 
                     <!-- Skip Container -->
-                    <div class="font-semibold flex items-center">
-                        <p>SKIP</p>
-                        <span class="text-2xl">&#8594;</span>
+                    <div class="font-semibold flex items-center xs:block hidden">
+                        <span>SKIP</span>
+                        <span class="text-3xl">&#8594;</span>
                     </div>
                 </div>
 
                 <!-- Ring -->
-                <div class="flex justify-center items-center absolute">
+                <div class="flex justify-center items-center absolute z-40">
                     <div
                         class="w-80 h-80 bg-[#c779e2] rounded-full xl:flex items-center justify-center hidden xl:block">
                         <div>
@@ -715,8 +730,8 @@
                 </div>
 
                 <!-- Banner-4 Right Section -->
-                <div class="flex justify-center items-center w-[50%]">
-                    <img src="./assets/banner-4.png" alt="banner-1-cover" class="max-w-full sm:w-[100%] w-64">
+                <div class="xs:flex xs:justify-center xs:items-center xs:w-[50%] w-[100%] h-[50vh] z-30">
+                    <img src="./assets/banner-4.png" alt="banner-1-cover" class="max-w-full xs:w-[100%] w-[100%]">
                 </div>
             </div>
         </section>
@@ -744,14 +759,14 @@
             </div>
 
             <!-- Next Previous Button Section -->
-            <div class="flex items-center justify-center gap-6 mt-10">
+            <!-- <div class="flex items-center justify-center gap-6 mt-10">
                 <div class="w-11 h-11 flex items-center justify-center rounded-full bg-[#fcf1f9] text-[#e86969] font-bold text-2xl cursor-pointer"
                     style="box-shadow: 0 0 10px #cecece;">
                     &lt;</div>
                 <div class="w-11 h-11 flex items-center justify-center rounded-full bg-[#fcf1f9] text-[#e86969] font-bold text-2xl cursor-pointer"
                     style="box-shadow: 0 0 10px #cecece;">
                     &gt;</div>
-            </div>
+            </div> -->
         </section>
 
         <!-- Success Story Section -->
@@ -760,7 +775,7 @@
                 <h1 class="sm:text-3xl text-2xl font-bold">Success Stories</h1>
                 <div class="p-1 w-32 text-center cursor-pointer mr-[18px] md:block hidden"
                     style="box-shadow: 0 0 10px #e7e6e6;">
-                    <p>View All <span class="text-2xl">&#8594;</span></p>
+                    <p>View All <span class="text-3xl">&#8594;</span></p>
                 </div>
             </div>
 
@@ -889,14 +904,14 @@
             </div>
 
             <!-- Next Previous Button Section -->
-            <div class="flex items-center justify-center gap-6 mt-10">
+            <!-- <div class="flex items-center justify-center gap-6 mt-10">
                 <div class="w-11 h-11 flex items-center justify-center rounded-full bg-[#fcf1f9] text-[#e86969] font-bold text-2xl cursor-pointer"
                     style="box-shadow: 0 0 10px #cecece;">
                     &lt;</div>
                 <div class="w-11 h-11 flex items-center justify-center rounded-full bg-[#fcf1f9] text-[#e86969] font-bold text-2xl cursor-pointer"
                     style="box-shadow: 0 0 10px #cecece;">
                     &gt;</div>
-            </div>
+            </div> -->
         </section>
 
         <!-- Frequently Ask Question Section -->
@@ -905,7 +920,7 @@
             <div class="flex items-center md:justify-between justify-center mb-8">
                 <h1 class="sm:text-3xl text-2xl font-bold">Frequently Asked Questions</h1>
                 <div class="p-1 w-32 text-center cursor-pointer md:block hidden" style="box-shadow: 0 0 10px #e7e6e6;">
-                    <p>View All <span class="text-2xl">&#8594;</span></p>
+                    <p>View All <span class="text-3xl">&#8594;</span></p>
                 </div>
             </div>
 
